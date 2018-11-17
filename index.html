@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <header class="container-fluid header header-home header-transparent navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <!--Mobile button-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <!--Menu-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="/about.html">Inso</a>
+                            </li>
+
+                            <li>
+                                <a href="/product.html">Sản phẩm</a>
+                            </li>
+
+                            <li>
+                                <a href="/promotion.html">Khuyến mãi</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/partner.html">Đối tác bán hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner container-fluid swiper-container">
+        <div class="swiper-wrapper">
+            <div class="banner-item swiper-slide">
+                <img src="assets/images/banner1.jpg" alt="" class="banner-img">
+
+                <div class="banner-content txtW">
+                    <div class="banner-content_wrapper">
+                        <div class="container">
+                            <h2 class="banner-heading">Bảo hiểm xe cá nhân của bạn cùng inso ngay hôm nay</h2>
+
+                            <span class="banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</span>
+
+                            <div class="banner-button">
+                                <a href="#" class="btnM btnC">Tìm hiểu thêm</a>
+                                <a href="#" class="btnM btnW">Tải ứng dụng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-item swiper-slide">
+                <img src="assets/images/banner2.jpg" alt="" class="banner-img">
+
+                <div class="banner-content txtW">
+                    <div class="banner-content_wrapper">
+                        <div class="container">
+                            <h2 class="banner-heading">Bảo hiểm xe cá nhân của bạn cùng inso ngay hôm nay</h2>
+
+                            <span class="banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</span>
+
+                            <div class="banner-button">
+                                <a href="#" class="btnM btnC">Tìm hiểu thêm</a>
+                                <a href="#" class="btnM btnW">Tải ứng dụng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            var banner = new Swiper('.banner', {
+                speed: 600,
+                effect: 'fade',
+                loop: true
+            })
+        })
+    </script>
+
+    <div class="charge container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="charge-left">
+                        <h3 class="heading3 txtW">Tính phí bảo hiểm <span>của bạn</span></h3>
+
+                        <p class="txtW mt50 mb60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+                        <div class="select-form">
+                            <span class="selected bgW">Chọn bảo hiểm</span>
+
+                            <ul class="select-list bgW">
+                                <li class="select-item">Bảo hiểm xe ô tô</li>
+                                <li class="select-item">Bảo hiểm ship hàng</li>
+                                <li class="select-item">Bảo hiểm sức khỏe</li>
+                                <li class="select-item">Bảo hiểm tình yêu</li>
+                                <li class="select-item">Bảo hiểm trễ chuyến bay</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btnR btnW mt40">Xem phí</a>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="charge-video">
+                        <img src="assets/images/charge-video.jpg" alt="">
+
+                        <span class="charge-video_play"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product container-fuild clearfix">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6 product-introduce">
+                    <div class="row product-introduce_wrapper">
+                        <h3 class="heading3">Thông tin <span>sản phẩm của chúng tôi</span></h3>
+
+                        <div class="product-introduce_content">
+                            <p>INSO mang đến cho bạn các sản phẩm bảo hiểm mới nhất, thiết thực và gần gũi với cuộc sống.</p>
+
+                            <p>Chỉ cần click chuột và điền thông tin online, không cần thêm bất cứ loại giấy tờ nào, bạn sẽ có ngay chứng nhận bảo hiểm điện tử cho mình.</p>
+
+                            <p>Yêu cầu bồi thường của bạn sẽ được xét duyệt trong 5 phút và ngay lập tức chuyển tiền đến bạn bằng hệ thống hoàn toàn tự động.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 product-item">
+                    <div class="product-item_wrapper">
+                        <img src="assets/images/product1.jpg" alt="" class="product-item_thumb">
+
+                        <div class="product-item_info">
+                            <h3 class="heading3 txtW"><i class="fas fa-car"></i>Bảo hiểm xe ô tô</h3>
+
+                            <p class="product-item_sapo txtW">Yêu cầu bồi thường bảo hiểm ngay trên app, đặt lịch hẹn gara và mang xe đến sửa. Không phải trả thêm bất cứ chi phí sửa chữa nào </p>
+
+                            <a href="#" class="btnR btnC">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 product-item">
+                    <div class="product-item_wrapper rectangle">
+                        <img src="assets/images/product2.jpg" alt="" class="product-item_thumb">
+
+                        <div class="product-item_info">
+                            <h3 class="heading3 txtW"><i class="fas fa-shipping-fast"></i>Bảo hiểm phí ship hàng</h3>
+
+                            <p class="product-item_sapo txtW">Được bồi thường 100% phí ship* khi đơn hàng của bạn bị hoàn trả về.</p>
+
+                            <a href="#" class="btnR btnC">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-item">
+                    <div class="product-item_wrapper rectangle">
+                        <img src="assets/images/product3.jpg" alt="" class="product-item_thumb">
+
+                        <div class="product-item_info">
+                            <h3 class="heading3 txtW"><i class="fas fa-heartbeat"></i>Bảo hiểm sức khỏe</h3>
+
+                            <p class="product-item_sapo txtW">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  mollit anim</p>
+
+                            <a href="#" class="btnR btnC">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-item">
+                    <div class="product-item_wrapper rectangle">
+                        <img src="assets/images/product4.jpg" alt="" class="product-item_thumb">
+
+                        <div class="product-item_info">
+                            <h3 class="heading3 txtW"><i class="fas fa-heart"></i>Bảo hiểm tình yêu</h3>
+
+                            <p class="product-item_sapo txtW">Nhận tiền “mừng cưới” đến 30 TRIỆU đồng</p>
+
+                            <a href="#" class="btnR btnC">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-item">
+                    <div class="product-item_wrapper rectangle">
+                        <img src="assets/images/product5.jpg" alt="" class="product-item_thumb">
+
+                        <div class="product-item_info">
+                            <h3 class="heading3 txtW">Bảo hiểm trễ chuyến bay</h3>
+
+                            <p class="product-item_sapo txtW">Máy bay Delay – Nhận ngay 1 TRIỆU <br /> Nhận bồi thường đến 1 TRIỆU khi chuyến bay của bạn bị delay từ 30 phút.</p>
+
+                            <a href="#" class="btnR btnC">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="process container-fluid">
+        <div class="row">
+            <div class="col-md-6 process-left">
+                <img src="assets/images/process.jpg" alt="" class="process-left_img">
+            </div>
+
+            <div class="col-md-6 process-right">
+                <div class="process-right_wrapper">
+                    <h3 class="heading3 txtW">Quy trình <span>Bồi thường cho bạn</span></h3>
+
+                    <ul class="process-right_list">
+                        <li class="process-right_item txtW">
+                            <span class="process-right_numberic">1</span>
+
+                            <div class="process-right_info">
+                                <span class="process-right_title"><i class="fas fa-mouse-pointer"></i>Chọn loại bồi thường</span>
+
+                                <span class="process-right_sapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  mollit anim id est laborum. Lorem ipsum</span>
+                            </div>
+                        </li>
+
+                        <li class="process-right_item txtW">
+                            <span class="process-right_numberic">2</span>
+
+                            <div class="process-right_info">
+                                <span class="process-right_title"><i class="fas fa-file-signature"></i>Khai báo thông tin trên app</span>
+
+                                <span class="process-right_sapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  mollit anim id est laborum. Lorem ipsum</span>
+                            </div>
+                        </li>
+
+                        <li class="process-right_item txtW">
+                            <span class="process-right_numberic">3</span>
+
+                            <div class="process-right_info">
+                                <span class="process-right_title"><i class="fas fa-handshake"></i>Nhận bồi thường sau 6 phút</span>
+
+                                <span class="process-right_sapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  mollit anim id est laborum. Lorem ipsum</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="download container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="download-wrapper">
+                        <h3 class="heading3">Tải app ngay bây giờ <span>Nhận ưu đãi hấp dẫn</span></h3>
+
+                        <p class="download-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+                        <div class="download-button">
+                            <a href="#"><img src="assets/images/android.png" alt=""></a>
+                            <a href="#"><img src="assets/images/appstore.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <img src="assets/images/download.png" alt="" class="download-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container-fluid txtW">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info">
+                        <img src="assets/images/logo.svg" alt="">
+
+                        <p class="footer-description txtW">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
+
+                        <div class="footer-social">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <span class="footer-title">Liên hệ</span>
+
+                    <ul class="footer-contact">
+                        <li class="footer-contact_item">
+                            <span class="footer-contact_icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+
+                            <span class="footer-contact_text">Trụ sở chính: <br /> 18 Tam Trinh, Minh Khai <br > Hai Bà Trưng, Hà Nội</span>
+                        </li>
+
+                        <li class="footer-contact_item">
+                            <span class="footer-contact_icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+
+                            <span class="footer-contact_text">0936.4955.559</span>
+                        </li>
+
+                        <li class="footer-contact_item">
+                            <span class="footer-contact_icon">
+                                <i class="far fa-clock"></i>
+                            </span>
+
+                            <span class="footer-contact_text">Thứ 2 - Thứ 7 (8h30 - 17h30) <br /> Chủ nhật nghỉ</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <span class="footer-title">Giới thiệu</span>
+
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#">Bảo hiểm tài sản</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Bảo hiểm xe cá nhân</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Bảo hiểm du lịch</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Bảo hiểm tài sản</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Bảo hiểm xe cá nhân</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Bảo hiểm du lịch</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <span class="footer-title">Chính sách bồi thường</span>
+
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#">Chính sách bồi thường 1</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Chính sách bồi thường 2</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Chính sách bồi thường 3</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Chính sách bồi thường 4</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Chính sách bồi thường 5</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#">Chính sách bồi thường 6</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

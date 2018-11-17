@@ -1,0 +1,38 @@
+.header
+  background-color: rgba($base-color, 1)
+  -webkit-box-shadow: 0 0 15px rgba($color-000, .4)
+  -moz-box-shadow: 0 0 15px rgba($color-000, .4)
+  box-shadow: 0 0 15px rgba($color-000, .4)
+  .navbar
+    margin-bottom: 0
+    background-color: transparent
+    border-color: transparent
+  .navbar-default
+    .navbar-nav
+      &>li
+        &>a
+          font-weight: 700
+          text-transform: uppercase
+          color: $color-fff
+          padding: 30px 20px
+          &:hover
+            background-color: $color-fff
+            color: $base-color
+  .navbar-brand
+    height: 80px
+    img
+      height: 50px
+  .navbar-toggle
+    margin-top: 23px
+    margin-bottom: 23px
+
+.header-transparent
+  background-color: rgba($base-color, 0)
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+  -webkit-transition: all 0.5s
+  -moz-transition: all 0.5s
+  -ms-transition: all 0.5s
+  -o-transition: all 0.5s
+  transition: all 0.5s
