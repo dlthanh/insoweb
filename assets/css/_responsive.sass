@@ -27,10 +27,22 @@
       margin: 30px auto
       width: 600px
 
+  .calculate
+    &-main
+      &_step
+        a:not(.active)
+          display: none
+      .form-group
+        flex-wrap: wrap
+        .control-label
+          margin-bottom: 5px
+        .form-control
+          width: 100%!important
+
 @media (max-width: 768px)
   .banner
     &-item
-      padding-bottom: 100%
+      padding-bottom: 80%
 
   .charge
     &-video
@@ -74,6 +86,22 @@
       &>div
         margin-bottom: 30px
 
+  .about
+    &-description
+      padding: 0
+    &-images
+      flex-wrap: wrap
+      height: auto
+    &-index
+      flex-wrap: wrap
+      &_img
+        background-image: url('../images/about-index1-mobile.png')!important
+        margin-top: 20px
+        &-left
+          background-image: url('../images/about-index2-mobile.png')!important
+        &:after
+          content: none
+
 @media (max-width: 425px)
   .header-transparent
     background-color: rgba($base-color, 1)
@@ -83,7 +111,9 @@
 
   .banner
     &-item
-      padding-bottom: 160%
+      padding-bottom: 100%
+    &-img
+      top: 20px
     &-heading
       font-size: 22px
       width: 100%
@@ -117,7 +147,51 @@
     &-img
       margin-top: 50px
 
+  .about
+    &-description
+      flex-wrap: wrap
+      &_text
+        padding: 0
+        margin-bottom: 20px
+
+  .productDetail-main_process-list
+    flex-wrap: wrap
+  .productDetail-main_process-item
+    width: 100%
+  .productDetail-main_docs-item
+    width: 100%
+
+  .calculate
+    &-main
+      &_oto2
+        &-text
+          display: flex
+        &-item
+          align-items: flex-start
+        &-list2
+          flex-wrap: wrap
+        &-item2
+          width: 100%
+      &_plane2
+        &-list
+          flex-wrap: wrap
+        &-item
+          width: 100%
+          margin-bottom: 30px
+      &_plane1
+        .form-group-col
+          width: 100%
+          margin-bottom: 15px
+          &:last-child
+            margin-bottom: 0
+
+  .promotion-recommend
+    &_item
+      width: 100%
+      &-title
+        padding: 0 20px
+
 @media (max-width: 320px)
   .banner
-    &-item
-      padding-bottom: 180%
+    //&-item
+    //  padding-bottom: 180%

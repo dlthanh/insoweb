@@ -1,6 +1,24 @@
 .footer
   padding: 50px 0
   background-color: #212830
+  &:after
+    content: '\f107'
+    font-family: 'Font Awesome\ 5 Pro'
+    font-weight: 900
+    font-size: 24px
+    color: $color-fff
+    text-align: center
+    display: block
+    width: 202px
+    height: 43px
+    mask: url('../images/wave-top-color.png') no-repeat left -3px top
+    -webkit-mask: url('../images/wave-top-color.png') no-repeat left -3px top
+    background-color: #212830
+    position: absolute
+    top: -42px
+    left: 50%
+    margin-left: -101px
+    z-index: 1
   &-description
     margin-top: 25px
     margin-bottom: 60px
@@ -41,7 +59,7 @@
     position: relative
     &:before
       content: '\f105'
-      font-family: 'Font Awesome 5 Free'
+      font-family: 'Font Awesome\ 5 Pro'
       font-weight: 900
       display: block
       position: absolute

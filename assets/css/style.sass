@@ -1,8 +1,6 @@
 @import "variables"
 @import "mixin"
 @import "base"
-@import "header"
-@import "footer"
 
 *
   &:before,
@@ -17,27 +15,29 @@ html,
 body
   font-family: 'helveticaneue', sans-serif
   font-size: 15px
+  background-color: $color-f9
 
 .banner
   position: relative
-  &:after
-    content: '\f107'
-    font-family: 'Font Awesome 5 Free'
-    font-weight: 900
-    font-size: 24px
-    color: $color-fff
-    text-align: center
-    display: block
-    width: 202px
-    height: 43px
-    mask: url('../images/wave-top-color.png') no-repeat left -3px top
-    -webkit-mask: url('../images/wave-top-color.png') no-repeat left -3px top
-    background-color: $base-color
-    position: absolute
-    bottom: -1px
-    left: 50%
-    margin-left: -101px
-    z-index: 1
+  &.banner-home
+    &:after
+      content: '\f107'
+      font-family: 'Font Awesome\ 5 Pro'
+      font-weight: 900
+      font-size: 24px
+      color: $color-fff
+      text-align: center
+      display: block
+      width: 202px
+      height: 43px
+      mask: url('../images/wave-top-color.png') no-repeat left -3px top
+      -webkit-mask: url('../images/wave-top-color.png') no-repeat left -3px top
+      background-color: $base-color
+      position: absolute
+      bottom: -1px
+      left: 50%
+      margin-left: -101px
+      z-index: 1
   &-item
     height: 0
     padding-bottom: 51.45%
@@ -84,6 +84,13 @@ body
       display: inline-block
       margin: 0 10px
 
+  &-product
+    margin-top: 110px
+    a
+      display: block
+      img
+        width: 100%
+
 .charge
   padding: 90px 0
   background-color: $base-color
@@ -111,6 +118,7 @@ body
       cursor: pointer
 
 .product
+  background-color: $color-fff
   &-introduce
     &_wrapper
       max-width: 585px
@@ -179,7 +187,7 @@ body
     position: relative
     &:before
       content: '\f104'
-      font-family: 'Font Awesome 5 Free'
+      font-family: 'Font Awesome\ 5 Pro'
       font-weight: 900
       font-size: 24px
       color: $color-fff
@@ -228,6 +236,7 @@ body
 .download
   padding-top: 50px
   padding-bottom: 70px
+  background-color: $color-fff
   &-img
     width: 80%
     display: block
@@ -246,5 +255,610 @@ body
       img
         width: 100%
 
+.productDetail
+  margin-top: 50px
+  &-sidebar
+    &_btn
+      margin-top: 10px
+      margin-bottom: 15px
+    &_notice
+      font-weight: 500
+      padding: 0 5px
+    &_item
+      position: relative
+      padding-left: 30px
+      margin-bottom: 20px
+      &:before
+        content: '\f105'
+        font-family: 'Font Awesome\ 5 Pro'
+        font-weight: 900
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        color: $color-666
+      a
+        color: $color-666
+        &:hover
+          color: $color-333
+  &-main
+    background-color: $color-fff
+    padding: 20px 15px 60px
+    &_txt
+      color: $color-666
+      margin-bottom: 35px
+      .bold
+        color: $color-333
+        font-weight: 500
+    &_item
+      margin-bottom: 30px
+      i
+        margin-right: 20px
+        color: $base-color
+    &_continue
+      i
+        margin-left: 20px
+        margin-top: 1px
+    &_process
+      &-list
+        display: flex
+        justify-content: space-between
+      &-item
+        width: calc((100% - 80px) / 3)
+        font-weight: 300
+      &-title
+        font-weight: 700
+        color: $base-color
+        i
+          margin-right: 20px
+      &-txt
+        font-size: 14px
+    &_docs
+      &-list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+      &-item
+        width: 30%
+        margin-bottom: 20px
+        i
+          color: $base-color
+          margin-right: 20px
+        a
+          color: $color-666
+          &:hover
+            color: $color-333
 
+.breadcrumb
+  margin-top: 110px
+  background-color: transparent
+  a
+    color: $color-666
+    &.current
+      color: $color-333
+      font-weight: 500
+  i
+    margin: 0 10px
+
+.promotion
+  &-item
+    margin-bottom: 40px
+  &-thumb
+    display: block
+    img
+      width: 100%
+  &-title
+    font-size: 24px
+    font-weight: 500
+    color: $color-666
+    display: block
+    margin: 30px 0 20px
+    &:hover
+      color: $color-333
+  &-date
+    margin-bottom: 5px
+  &-sapo
+    line-height: 30px
+  &-sidebar
+    &_banner
+      margin-bottom: 40px
+      a
+        display: block
+        img
+          width: 100%
+    &_item
+      margin-bottom: 15px
+      display: flex
+      justify-content: space-between
+      i
+        width: 30px
+        padding-top: 3px
+      a
+        color: $color-666
+        &:hover
+          color: $color-333
+
+.calculate
+  margin-top: 80px
+  &-sidebar
+    margin-top: 30px
+    &_banner
+      a
+        display: block
+        img
+          width: 100%
+    &_item
+      margin-bottom: 30px
+    &_ask
+      display: flex
+      color: $color-333
+      cursor: pointer
+      &:before
+        content: '\f105'
+        font-family: 'Font Awesome\ 5 Pro'
+        display: block
+        width: 25px
+    &_answer
+      padding-left: 25px
+      color: $color-999
+      font-size: 13px
+      display: none
+  &-main
+    padding: 30px 15px 110px
+    background-color: $color-fff
+    &_step
+      display: flex
+      justify-content: space-around
+      .btnW
+        color: $color-666
+        border: solid 1px $color-e1
+    &_sapo
+      margin-top: 40px
+      margin-bottom: 50px
+    &_title
+      font-weight: 700
+      padding-bottom: 10px
+      border-bottom: solid 1px $color-e1
+      color: $base-color
+      margin: 0
+    &_submit
+      margin: 80px auto 110px
+
+    &_oto1
+      max-width: 555px
+      padding-top: 30px
+    &_oto2
+      &-list
+        padding: 30px 20px 0
+        border: solid 1px $color-e1
+        border-top: none
+      &-item
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+      &-text
+        cursor: pointer
+        &:before
+          content: '\f0c8'
+          font-family: 'Font Awesome\ 5 Pro'
+          color: $color-666
+          margin-right: 20px
+        &.checked
+          &:before
+            content: '\f14a'
+            color: $base-color
+            font-weight: 900
+      &-amount
+        font-weight: 700
+        color: $base-color
+        &:after
+          content: 'đ'
+          vertical-align: super
+          font-size: small
+
+      &-list2
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+      &-item2
+        background-image: linear-gradient(to right, $base-color, #04bafc)
+        color: $color-fff
+        width: calc((100% - 30px)/2)
+        padding: 30px
+        border: solid 1px $color-e1
+        &_amount
+          font-size: 32px
+          position: relative
+          cursor: pointer
+          &:after
+            content: 'đ'
+            vertical-align: super
+            font-size: 15px
+          &:before
+            content: '\f0c8'
+            font-family: 'Font Awesome\ 5 Pro'
+            font-size: 18px
+            position: absolute
+            right: 0
+            top: 9px
+          &.checked
+            &:before
+              content: '\f14a'
+              font-weight: 900
+          i
+            margin-right: 15px
+      &-title
+        font-size: 18px
+        font-weight: 700
+
+      &-total
+        padding: 30px
+        background-color: $color-f9
+        .control-label
+          font-size: 18px
+        .form-control-static
+          font-size: 18px
+          font-weight: 700
+          &:after
+            content: 'đ'
+            vertical-align: super
+            font-size: 15px
+    .breadcrumb
+      margin: 0
+      padding: 0
+
+    .form-group
+      display: flex
+      align-items: center
+      .control-label
+        width: 155px
+        margin-bottom: 0
+        font-weight: 400
+      .form-control
+        max-width: 400px
+        border-radius: 15px
+        border: solid 1px $color-e1
+        &.w30
+          width: 30%
+        &.w40
+          width: 50%
+      .form-control-static
+        margin-left: auto
+
+    &_plane1
+      padding-top: 30px
+      .form-group
+        justify-content: space-between
+      .form-group-col
+        width: calc((100% - 100px)/2)
+        display: flex
+        align-items: center
+      .form-control
+        max-width: calc(100% - 155px) !important
+    &_plane2
+      &-text
+        margin-bottom: 50px
+        cursor: pointer
+        span
+          color: $base-color
+          font-weight: 500
+        &:before
+          content: '\f0c8'
+          font-family: 'Font Awesome\ 5 Pro'
+          margin-right: 20px
+        &.checked
+          &:before
+            content: '\f14a'
+            font-weight: 900
+            color: $base-color
+      &-list
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+      &-item
+        width: calc((100% - 60px)/3)
+        padding: 30px 0
+        border: solid 1px $color-e1
+        text-align: center
+        &.tinhyeu
+          background-color: #ffeeee
+          a
+            background-color: #f26d7d
+          .calculate-main_plane2-indemnify-amount
+            color: #f26d7d
+        &:hover
+          -webkit-box-shadow: 0 0 10px rgba($color-000, .2)
+          -moz-box-shadow: 0 0 10px rgba($color-000, .2)
+          box-shadow: 0 0 10px rgba($color-000, .2)
+        &:first-child
+          .fa-plane,
+          .fa-heart
+            color: #ffcc00
+        &:nth-child(2)
+          .fa-plane,
+          .fa-heart
+            color: #f26d7d
+        &:last-child
+          .fa-plane,
+          .fa-heart
+            color: #d0d0d0
+      &-title
+        font-weight: 500
+        color: $color-666
+      &-amount
+        font-size: 24px
+        color: $color-666
+        padding-bottom: 10px
+        border-bottom: solid 1px $color-e1
+        &:after
+          content: 'đ'
+          vertical-align: super
+          font-size: 15px
+      .fa-plane,
+      .fa-heart
+        font-size: 100px
+        margin: 50px 0
+      &-indemnify
+        &-text
+          color: $color-666
+          margin-bottom: 0
+        &-amount
+          font-size: 32px
+          color: $base-color
+          font-weight: 500
+          &:after
+            content: 'đ'
+            vertical-align: super
+            font-size: 15px
+        a
+          width: calc(100% - 30px)
+          margin: 20px auto 0
+          display: block
+          height: 44px
+          line-height: 44px
+          border-radius: 22px
+
+.date-picker
+  position: relative
+  width: calc(100% - 155px)
+  .form-control
+    width: 100% !important
+    max-width: 100% !important
+  &:after
+    content: '\f272'
+    font-family: 'Font Awesome\ 5 Pro'
+    position: absolute
+    top: 4px
+    right: 15px
+    background-color: transparent
+    color: $color-666
+
+.forgot-password
+  margin-left: auto
+.paymentbtn
+  margin: 50px auto 0
+
+.about
+  h2
+    margin-top: 20px
+    margin-bottom: 70px
+  &-description
+    display: flex
+    padding: 0 140px
+    &_text
+      padding-right: 40px
+  &-images
+    display: flex
+    margin: 80px 0
+    height: 394px
+    &_fit
+      height: 100%
+      overflow: hidden
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &_row
+      display: flex
+      flex-wrap: wrap
+      height: 100%
+      &>div
+        height: 50%
+  &-index
+    display: flex
+    align-items: center
+    margin-bottom: 80px
+    h2
+      position: relative
+      margin-bottom: 80px
+      span
+        font-size: 152px
+        position: absolute
+        top: 50%
+        left: 50%
+        -webkit-transform: translate(-50%, -50%)
+        -moz-transform: translate(-50%, -50%)
+        -ms-transform: translate(-50%, -50%)
+        -o-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+        color: rgba($color-666, .1)
+        font-weight: 700
+    &_text
+      text-align: center
+      padding: 0 30px
+    a
+      display: block
+      margin-top: 60px
+      color: $base-color
+      text-transform: uppercase
+      font-weight: 500
+      text-align: center
+      i
+        margin-left: 5px
+    &_img
+      height: 660px
+      position: relative
+      background-size: contain!important
+      &:after
+        content: '\f053'
+        font-family: 'Font Awesome\ 5 Pro'
+        font-weight: 900
+        font-size: 24px
+        color: $color-fff
+        position: absolute
+        top: 48%
+        left: 10px
+        -webkit-transform: translate(0, -50%)
+        -moz-transform: translate(0, -50%)
+        -ms-transform: translate(0, -50%)
+        -o-transform: translate(0, -50%)
+        transform: translate(0, -50%)
+      &-left
+        &:after
+          content: '\f054'
+          left: unset
+          right: 10px
+  &-team
+    margin-bottom: 130px
+    h3
+      margin-bottom: 80px
+    img
+      width: 100%
+      margin-bottom: 20px
+    &_career
+      color: $color-999
+      margin-bottom: 0
+    &_name
+      font-size: 13px
+
+.faq-item
+  margin-bottom: 40px
+  .faq-title
+    font-size: 18px
+    color: $base-color
+    font-weight: 500
+  .faq-sapo
+    line-height: 24px
+  .faq-viewmore
+    font-size: 13px
+    font-weight: 500
+    color: $color-666
+    i
+      margin-left: 10px
+
+.promotion-detail
+  margin-bottom: 40px
+  .promotion-title
+    color: $color-333
+  .promotion-text
+    color: $color-666
+    line-height: 24px
+    margin-bottom: 25px
+  .promotion-img
+    width: auto
+    max-width: 100%
+    margin: 0 auto 25px
+    display: block
+
+.promotion-recommend
+  margin-bottom: 80px
+  &_main
+    display: flex
+    flex-wrap: wrap
+  &_item
+    width: 50%
+    display: flex
+    margin-bottom: 30px
+    &-thumb
+      width: 160px
+      display: block
+      img
+        width: 100%
+    &-title
+      display: block
+      padding: 0 60px 0 20px
+      color: $color-333
+      font-size: 13px
+      font-weight: 700
+
+.indemnify-title
+  text-align: center
+  margin-top: 50px
+  margin-bottom: 30px
+.indemnify-text
+  line-height: 24px
+  margin-bottom: 25px
+.indemnify-sapo
+  line-height: 24px
+  color: $color-666
+  margin-top: 50px
+  margin-bottom: 50px
+  padding: 0 30px
+  text-align: center
+.indemnify-step
+  justify-content: space-evenly
+.indemnify-item
+  border-bottom: solid 1px $color-e1
+  margin-top: 50px
+  &_title
+    color: $base-color
+    margin-bottom: 20px
+  &_sapo
+    color: $color-666
+  &_download
+    margin-top: 30px
+    margin-bottom: 50px
+
+#advisory
+  padding: 0
+  display: none
+  width: 500px
+  .title
+    height: 60px
+    line-height: 60px
+    background-color: $base-color
+    color: $color-fff
+    font-size: 18px
+    font-weight: 700
+    text-align: center
+  .fancybox-close-small
+    height: 60px
+    color: $color-fff
+  .wrapper
+    padding: 30px 50px
+    .form-label
+      color: $color-666
+    .form-control
+      -webkit-border-radius: 17px
+      -moz-border-radius: 17px
+      border-radius: 17px
+  .submit
+    margin: 0 auto
+
+.paging
+  &-item
+    display: inline-block
+    width: 30px
+    height: 30px
+    text-align: center
+    background-color: rgba($base-color, 0)
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+    &.active,
+    &:hover
+      background-color: rgba($base-color, 1)
+      a
+        color: $color-fff
+    a
+      display: block
+      color: $color-000
+      font-weight: 500
+      line-height: 30px
+
+@import "header"
+@import "footer"
 @import "responsive"
